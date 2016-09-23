@@ -1,0 +1,22 @@
+{
+    "name": "jonmer09/yii2-sms",
+    "description": "Yii2 SMS",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Jonmer Carpio",
+            "email": "jonmer09@gmail.com"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "*",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jonmer09\\sms\\": ""
+        }
+    }
+}
