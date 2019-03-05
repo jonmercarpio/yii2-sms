@@ -1,0 +1,31 @@
+
+#sms_chat{
+    /*width: 512px;*/
+    text-align: center;
+}
+
+#sms_chat #sms_chat_list .bubble{
+    padding: 5px;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    margin: 5px;
+    background-color: white;
+}
+
+#sms_chat #sms_chat_list span{
+    float: left;
+    padding: 2px;
+    width: 100%;
+}
+
+#sms_chat #sms_chat_list .inbound-api{
+    float: left;
+    text-align: left;
+}
+
+#sms_chat #sms_chat_list .outbound-api{
+    float: right;
+    text-align: right;
+    background-color: #ececec;
+    border: 1px solid #D5F9BA;
+}

@@ -6,14 +6,25 @@
  *
  * @author Jonmer Carpio <jonmer09@gmail.com>
  */
-use yii\widgets\ListView;
+use jonmer09\sms\ChatAsset;
 use kartik\helpers\Html;
+use yii\web\View;
+use yii\widgets\ListView;
+use yii\widgets\Pjax;
 
-/* @var $this \yii\web\View */
+/* @var $this View */
 $this->title = $to;
+
+ChatAsset::register($this);
 ?>
 <div id="sms_chat">
-    <div class="col-sm-12 pre-scrollable">
+    <div id="sms_chat_list_scroll" class="col-sm-12 pre-scrollable">
+        <?php
+        Pjax::begin([
+            'id' => 'chat-list',
+            'enablePushState' => false
+        ]);
+        ?> 
         <?=
         ListView::widget([
             'id' => 'sms_chat_list',
@@ -21,45 +32,24 @@ $this->title = $to;
             'summary' => "",
             'itemView' => "_item_chat"
         ])
-        ?>    
-    </div>
-    <div class="row">
+        ?>
+        <?php Pjax::end(); ?>
+    </div> 
+    <div class="col-sm-12 row" id="sms_chat_form">
+        <div class="error-summary col-sm-12" id="error-summary">
+        </div>
         <div>
-            <?= Html::beginForm(['default/send']) ?>
-            <?= Html::hiddenInput("SmsQueue[to]", $to) ?>    
-            <div class="col-sm-10">
-                <?= Html::textarea('SmsQueue[body]', null, ['class' => 'form-control', 'maxlength' => "100"]) ?>
-            </div>        
-            <?= Html::submitButton('>', ['class' => 'btn btn-success pull-left']) ?>        
+            <?= Html::beginForm(['default/send', 'redirect' => false], 'post', ['id' => "chat_form", 'data' => ['url' => $url]]) ?>
+            <?= Html::hiddenInput("SmsQueue[to]", $to) ?>
+            <div class="row">
+                <div class="col-xs-10">
+                    <?= Html::textarea('SmsQueue[body]', null, ['class' => 'form-control', 'maxlength' => "100"]) ?>                
+                </div>
+                <div class="col-xs-1 row">
+                    <?= Html::submitButton('&gt;', ['class' => 'btn btn-success']) ?>    
+                </div>    
+            </div>
             <?= Html::endForm() ?>
         </div>
     </div>
 </div>
-<style type="text/css">
-    #sms_chat #sms_chat_list .bubble{
-        padding: 5px;
-        border: 1px solid #FFF;
-        border-radius: 5px;
-        margin: 5px;
-        background-color: white;
-    }
-
-    #sms_chat #sms_chat_list span{
-        float: left;
-        padding: 2px;
-        width: 100%;
-    }
-
-    #sms_chat #sms_chat_list .inbound-api{
-        float: left;
-        text-align: left;
-    }
-
-    #sms_chat #sms_chat_list .outbound-api{
-        float: right;
-        text-align: right;
-        background-color: #ececec;
-        border: 1px solid #D5F9BA;
-    }
-
-</style>

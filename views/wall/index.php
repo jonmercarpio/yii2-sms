@@ -10,7 +10,7 @@ use kartik\helpers\Html;
 use kartik\tabs\TabsX;
 use yii\helpers\Url;
 
-jonmer09\sms\SMSAsset::register($this);
+jonmer09\sms\WallAsset::register($this);
 
 /* @var $this \yii\web\View */
 ?>

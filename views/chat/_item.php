@@ -7,9 +7,9 @@
  * @author Jonmer Carpio <jonmer09@gmail.com>
  */
 use kartik\helpers\Html;
-
 ?>
-<?=
-
-Html::a($model->to, ['chat', 'to' => $model->to], ['class' => 'sms_item'])
-?>
+<div data-id="<?= $model->to ?>">
+    <?=
+    Html::a($model->to, ['chat', 'to' => $model->to], ['class' => 'sms_item'])
+    ?>    
+</div>

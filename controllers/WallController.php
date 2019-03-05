@@ -18,6 +18,14 @@ use yii\web\UploadedFile;
 
 class WallController extends Controller {
 
+    public function beforeAction($action) {
+        $this->enableCsrfValidation = false;
+        if (!\Yii::$app->user->identity) {
+            $this->layout = "remote";
+        }
+        return parent::beforeAction($action);
+    }
+
     public function actionIndex() {
         $smsQueueModel = new SmsQueue();
         $smsInputModel = new SmsInputForm();

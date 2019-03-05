@@ -8,7 +8,6 @@
 
 namespace jonmer09\sms\components;
 
-
 use Twilio\Rest\Client;
 use yii\base\Component;
 
@@ -90,5 +89,4 @@ class TwilioSMS extends Component
             return parent::__call($methodName, $methodParams);
         }
     }
-
 }

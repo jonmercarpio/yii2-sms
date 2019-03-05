@@ -6,11 +6,13 @@
  * @author Jonmer Carpio <jonmer09@gmail.com>
  */
 /* @var $model jonmer09\sms\models\SmsViewConversation */
+
+$number = $model->direction == 'inbound-api' ? "to" : "from";
 ?>
-<div class="col-sm-12">
-    <div class="<?= $model->direction ?> bubble">        
-        <div class="col-sm-12">     
-            <?= $model->to ?>
+<div class="row">
+    <div class="<?= $model->direction ?> bubble col-sm-8">     
+        <div class="col-sm-12">
+            <div><?= $model->created_at ?> | <?= $model->$number ?></div>            
             <?= $model->body ?>
         </div>
     </div>
