@@ -2,7 +2,7 @@
 
 namespace jonmercarpio\sms\controllers;
 
-use common\components\Controller;
+use jonmercarpio\sms\components\Controller;
 use jonmercarpio\sms\models\SmsViewConversationSearch;
 use Yii;
 use yii\db\ActiveQuery;

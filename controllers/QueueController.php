@@ -9,7 +9,7 @@
 namespace jonmercarpio\sms\controllers;
 
 
-use common\components\Controller;
+use jonmercarpio\sms\components\Controller;
 
 class QueueController extends Controller
 {

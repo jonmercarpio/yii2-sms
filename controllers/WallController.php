@@ -10,7 +10,7 @@
 namespace jonmercarpio\sms\controllers;
 
 use jonmercarpio\sms\components\SMSHelper;
-use common\components\Controller;
+use jonmercarpio\sms\components\Controller;
 use jonmercarpio\sms\models\SmsInputForm;
 use jonmercarpio\sms\models\SmsQueue;
 use yii\web\Response;
