@@ -6,14 +6,14 @@
  * Time: 3:43 PM
  */
 
-namespace jonmer09\sms\components;
+namespace jonmercarpio\sms\components;
 
 use Twilio\Rest\Client;
 use yii\base\Component;
 
 /**
  * Class TwilioSMS
- * @package jonmer09\sms\components
+ * @package jonmercarpio\sms\components
  */
 class TwilioSMS extends Component
 {

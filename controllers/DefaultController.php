@@ -7,12 +7,12 @@
  * Time: 3:43 PM
  */
 
-namespace jonmer09\sms\controllers;
+namespace jonmercarpio\sms\controllers;
 
 use common\components\Controller;
-use jonmer09\sms\components\SMSHelper;
-use jonmer09\sms\models\SmsQueue;
-use jonmer09\sms\models\SmsReception;
+use jonmercarpio\sms\components\SMSHelper;
+use jonmercarpio\sms\models\SmsQueue;
+use jonmercarpio\sms\models\SmsReception;
 use Yii;
 use yii\httpclient\Client;
 use yii\web\Response;

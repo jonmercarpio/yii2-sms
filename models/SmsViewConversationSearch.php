@@ -9,14 +9,14 @@
 ?>
 <?php
 
-namespace jonmer09\sms\models;
+namespace jonmercarpio\sms\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use jonmer09\sms\models\SmsViewConversation;
+use jonmercarpio\sms\models\SmsViewConversation;
 
 /**
- * SmsViewConversationSearch represents the model behind the search form of `jonmer09\sms\models\SmsViewConversation`.
+ * SmsViewConversationSearch represents the model behind the search form of `jonmercarpio\sms\models\SmsViewConversation`.
  */
 class SmsViewConversationSearch extends SmsViewConversation {
 

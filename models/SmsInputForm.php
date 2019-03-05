@@ -6,7 +6,7 @@
  * Time: 12:15 PM
  */
 
-namespace jonmer09\sms\models;
+namespace jonmercarpio\sms\models;
 
 
 use yii\base\Model;

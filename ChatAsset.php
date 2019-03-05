@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace jonmer09\sms;
+namespace jonmercarpio\sms;
 
 use yii\web\AssetBundle;
 

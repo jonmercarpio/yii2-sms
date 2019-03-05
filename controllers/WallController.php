@@ -7,12 +7,12 @@
  * Time: 11:30 AM
  */
 
-namespace jonmer09\sms\controllers;
+namespace jonmercarpio\sms\controllers;
 
-use jonmer09\sms\components\SMSHelper;
+use jonmercarpio\sms\components\SMSHelper;
 use common\components\Controller;
-use jonmer09\sms\models\SmsInputForm;
-use jonmer09\sms\models\SmsQueue;
+use jonmercarpio\sms\models\SmsInputForm;
+use jonmercarpio\sms\models\SmsQueue;
 use yii\web\Response;
 use yii\web\UploadedFile;
 

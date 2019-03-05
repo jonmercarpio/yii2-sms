@@ -6,7 +6,7 @@
  *
  * @author Jonmer Carpio <jonmer09@gmail.com>
  */
-use jonmer09\sms\ChatAsset;
+use jonmercarpio\sms\ChatAsset;
 use kartik\helpers\Html;
 use yii\web\View;
 use yii\widgets\ListView;

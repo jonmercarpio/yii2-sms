@@ -7,10 +7,10 @@
  * Time: 11:16 AM
  */
 
-namespace jonmer09\sms\components;
+namespace jonmercarpio\sms\components;
 
-use jonmer09\sms\models\SmsInputForm;
-use jonmer09\sms\models\SmsQueue;
+use jonmercarpio\sms\models\SmsInputForm;
+use jonmercarpio\sms\models\SmsQueue;
 use Twilio\Exceptions\TwilioException;
 
 class SMSHelper {

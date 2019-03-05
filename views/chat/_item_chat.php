@@ -5,7 +5,7 @@
  *
  * @author Jonmer Carpio <jonmer09@gmail.com>
  */
-/* @var $model jonmer09\sms\models\SmsViewConversation */
+/* @var $model jonmercarpio\sms\models\SmsViewConversation */
 
 $number = $model->direction == 'inbound-api' ? "to" : "from";
 ?>

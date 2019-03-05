@@ -7,15 +7,15 @@
  * @author Jonmer Carpio <jonmer09@gmail.com>
  */
 
-namespace jonmer09\sms\models;
+namespace jonmercarpio\sms\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use jonmer09\sms\models\SmsQueue;
+use jonmercarpio\sms\models\SmsQueue;
 
 /**
- * SmsQueueSearch represents the model behind the search form of `jonmer09\sms\models\SmsQueue`.
+ * SmsQueueSearch represents the model behind the search form of `jonmercarpio\sms\models\SmsQueue`.
  */
 class SmsQueueSearch extends SmsQueue {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace jonmer09\sms\components;
+namespace jonmercarpio\sms\components;
 
 use yii\web\XmlResponseFormatter as BaseXmlResponseFormatter;
 

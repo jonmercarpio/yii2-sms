@@ -6,12 +6,12 @@
  * Time: 3:32 PM
  */
 
-namespace jonmer09\sms;
+namespace jonmercarpio\sms;
 
 
 class Module extends  \yii\base\Module
 {
-    public $controllerNamespace = 'jonmer09\sms\controllers';
+    public $controllerNamespace = 'jonmercarpio\sms\controllers';
 
     public function init() {
         parent::init();

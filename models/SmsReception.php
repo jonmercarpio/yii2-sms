@@ -1,6 +1,6 @@
 <?php
 
-namespace jonmer09\sms\models;
+namespace jonmercarpio\sms\models;
 
 use Yii;
 

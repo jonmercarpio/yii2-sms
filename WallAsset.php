@@ -1,6 +1,6 @@
 <?php
 
-namespace jonmer09\sms;
+namespace jonmercarpio\sms;
 
 use yii\web\AssetBundle;
 

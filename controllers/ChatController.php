@@ -1,9 +1,9 @@
 <?php
 
-namespace jonmer09\sms\controllers;
+namespace jonmercarpio\sms\controllers;
 
 use common\components\Controller;
-use jonmer09\sms\models\SmsViewConversationSearch;
+use jonmercarpio\sms\models\SmsViewConversationSearch;
 use Yii;
 use yii\db\ActiveQuery;
 use yii\helpers\Url;

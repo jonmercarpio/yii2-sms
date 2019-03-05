@@ -1,5 +1,5 @@
 {
-    "name": "jonmer09/yii2-sms",
+    "name": "jonmercarpio/yii2-sms",
     "description": "Yii2 SMS",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "jonmer09\\sms\\": ""
+            "jonmercarpio\\sms\\": ""
         }
     }
 }

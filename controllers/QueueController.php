@@ -6,7 +6,7 @@
  * Time: 5:48 PM
  */
 
-namespace jonmer09\sms\controllers;
+namespace jonmercarpio\sms\controllers;
 
 
 use common\components\Controller;
