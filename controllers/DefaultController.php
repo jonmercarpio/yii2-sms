@@ -9,7 +9,7 @@
 
 namespace jonmercarpio\sms\controllers;
 
-use common\components\Controller;
+use jonmercarpio\sms\components\Controller;
 use jonmercarpio\sms\components\SMSHelper;
 use jonmercarpio\sms\models\SmsQueue;
 use jonmercarpio\sms\models\SmsReception;
